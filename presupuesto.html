@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- jequery -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>    
+
+<!-- google Font   -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<!-- font Awsome  -->
+<link rel="stylesheet" href="/CSS/all.css" />
+<link rel="stylesheet" href="/CSS/all.min.css" />
+
+<!-- Normaliz  -->
+<link rel="stylesheet" href="/CSS/normalize.css" />
+
+
+<!-- API OpenStreetMaps -->
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+
+<!-- ENLACE STYLE CSS  -->
+<link rel="stylesheet" href="/css/stilos.css">
+<title>Presupuesto</title>
+</head>
+<body>
+
+
+<!-- INCIO DE HEADER -->
+
+    <header>
+        <div class="header" id="header">
+            <div class="contenidor">
+                <a href="" class="logo">Logo</a>
+           
+                    <ul class="main-nav">
+                         <li><a href="/index.html">Inicio</a></li>
+                        <li><a href="/presupuesto.html">Prespuesto</a></li>
+                        <li><a href="/galeria.html">Galeria</a></li>     
+                        <li><a href="/contactos.html">Contactos</a></li>
+                    </ul>
+            </div>
+        </div>
+    </header>
+<!-- FEN DE HEADER  -->   
+
+
+<!-- ******************** INICIO DE  FORMULARIO ******************** -->
+<!-- ******************** INCIO PREMIRA PARTE DEL FORMULARIO  ******************** -->
+
+<div class="contenidor">
+<form class="formulario" id="formulario"  action="https://formsubmit.co/elharadi.hamza@gmail.com"  method="POST">
+    <!-- INICIO DE FIELDSET DE DATOS  -->
+
+    
+<fieldset>
+        <legend>Datos personales</legend>
+
+        
+    <div class="datos">
+        <div class="name">
+            <div>
+            <label for="nombre">Nombre :</label>
+            <input type="text" name="nombre" id="nombre"><br>
+            <span></span>
+            </div>
+        </div>
+        
+        <div class="apellido">
+            <div>
+            <label for="apellido">Apellidos :</label>
+            <input type="text" name="apellido" id="apellido"><br>
+            <span></span>
+            </div>
+        </div>
+
+       <div class="mobile">
+            <div>
+            <label for="mobile">Telefono :</label>
+            <input type="number" name="mobile" id="mobile"><br>
+            <span></span>
+            </div>
+       </div>
+        <div class="correo">
+            <div>
+            <label for="correo">Correo :</label>
+            <input type="text" name="correo" id="correo"><br>
+            <span></span>
+            </div>
+        </div>
+    </div>  
+</fieldset>
+    
+
+<!--  ******************** FEN PREMIRA PARTE DEL FORMULARIO ********************-->
+
+<!-- INCIO SEGUNDA PARTE DEL FORMULARIO  -->
+<!-- INICIO FIELDSET DE  PRESUPUEST  -->
+
+<fieldset>
+    <legend>Presupuesto</legend>
+    <div class="presupuesto">
+        <div class="product"> 
+            <div>
+            <h2>Producto</h2>
+                <select id="select">
+                  
+                    <option class="product"  value="producto 00:0">Select producto</option>
+                    <option class="product"  value="producto 01:10">Producto 01 10$</option>
+                    <option class="product"  value="producto 01:20">Producto 02 20$</option>
+                    <option class="product"  value="producto 01:40">Producto 03 40$</option>
+                </select>
+                
+                <span></span>
+             </div>  
+        </div> 
+        <div class="plazo-extra"> 
+            <div>  
+                <label for="palzo">Eleja un numero</label>
+                <input type="number" name="numeroDia" id="palzo"><br>    
+                <span></span>  
+             </div>           
+            <h2>Eleja los acceso de extra</h2>
+                    <label for="free">
+                    <input type="checkbox" name="free" class="extra" value="0" id="free">
+                    free
+                    </label>
+                <label for="Basic">
+                <input type="checkbox" name="Basic" class="extra" value="0.1" id="Basic">
+                Basic
+                </label>
+                <label for="Premium">
+                <input type="checkbox" name="Premium" class="extra" value="0.2" id="Premium">
+                Premium
+                </label>
+                <label for="Premium-plus">
+                <input type="checkbox" name="Premium-plus" class="extra" value="0.4" id="Premium-plus">
+                Premium plus
+                </label>
+                <span></span>
+        </div>
+    <div class="total-final">
+    <h2 id="total-final"> Total : 0$</h2>
+    </div>
+  </div> 
+
+
+</fieldset>
+<!-- FEN FIELDSET DE PRESUPUEST  -->
+
+ <!-- INCIO DE PIELDSET DE PREVACIDAD -->
+ 
+<fieldset>
+    <legend>Condiciones y envío del presupuesto</legend>
+    <div class="prevacidad">
+            <div class="prevacidad-uno">
+                    <div>
+                    <label for="prevacidad">aceptar las condiciones de privacidad</label>
+                    <input type="checkbox"  id="prevacidad">
+                    <span></span>
+                    </div>
+            </div>
+            <button id="btn-presupesto" name="enviar" value="enviar">enviar</button>
+            <button id="btn-rest" type="reset" value="reset" >reset</button>
+    </div>    
+</fieldset>
+<!-- FEN DE PIELDSET DE PREVACIDAD -->
+</form>
+</div>
+ 
+<!-- ******************** FEN DE  FORMULARIO ******************** -->
+
+<!-- INCIO DE FOOTER  -->
+<footer>
+    <div class="top-footer">
+        <div class="contenidor">
+            <div class="global-footer">
+                <nav class="global-footer-nav">
+                    <ul class="main-list">
+                        <li><a href="">Compañía</a></li>
+                        <li><a href="">Noticias</a></li>
+                        <li><a href="">Para los medios de comunicación</a></li>
+                    </ul>
+                    <ul class="sublist">
+                        <li><a href="">Accesibilidad</a></li>
+                        <li><a href="">Requisito</a></li>
+
+                    </ul>
+                        <ul class="sublist">
+                        <li><a href="">Advertencia de Compra por Internet</a></li>
+                        <li><a href="">Sitemap</a></li>
+
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer-sns">
+                <ul class="social">
+                    <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                    <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+                    <li><a href=""><i class="fab fa-youtube"></i></a></li>
+                </ul>
+
+            </div>
+            <div class="footer-copy">
+                <small class="copy">© 2026 Seiko Watch Corporation</small>
+            </div>
+        </div>
+
+    </div>
+</footer>
+
+<!-- FEN DE FOOTER -->
+
+
+
+<!-- ENLACE  SCRIPT DE LA PAJINA DE PRESUPESTO  -->
+ <script src="/js/presupesto.js"></script>
+
+ <!-- ENLACE SCRIPT DE LA PAJINA INDEX  -->
+<script src="/js/scripts.js"></script>
+
+</body>
+</html>

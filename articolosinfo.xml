@@ -1,0 +1,71 @@
+<articulos>
+    <articolosinfo>
+        <datos>
+            <marca>Marea</marca>
+            <description>Reloj de hombre B41389/1 correa de acero y esfera blanca</description>
+            <precio>29,90 €</precio>
+            <categoria>Novedad</categoria>
+            <collection>kING SEIKO</collection>
+        </datos>
+    </articolosinfo>
+    <articolosinfo>
+        <datos>
+            <marca>Calvin Klein</marca>
+            <description>Reloj de hombre CK Iconic 25200229 de acero dorado</description>
+            <precio>129,35 €</precio>
+            <categoria>Ediciones Limitadas</categoria>
+            <collection>PROSPEX</collection>
+        </datos>
+    </articolosinfo>
+    <articolosinfo>
+        <datos>
+            <marca>Orient</marca>
+            <description>Reloj de hombre Classic RA-AC0023E30B automático verde</description>
+            <precio>288 €</precio>
+            <categoria>Divers</categoria>
+            <collection>PRESAGE</collection>
+        </datos>
+    </articolosinfo>
+    <articolosinfo>
+        <datos>
+            <marca>Emporio Armani</marca>
+            <description>Reloj de hombre AR60079 Automático de acero</description>
+            <precio>342,30 €</precio>
+            <categoria>Material Caja</categoria>
+            <collection>ASTRON</collection>
+        </datos>
+    </articolosinfo>
+    <articolosinfo>
+        <datos>
+            <marca>LOTUS</marca>
+            <description>Reloj de hombre 18812/2 Multifuncion de acero plateado</description>
+            <precio>80,10 €</precio>
+            <categoria>Tipo de Correa</categoria>
+            <collection>SEIKO</collection>
+        </datos>
+    </articolosinfo>
+    <articolosinfo>
+        <datos>
+            <marca>Festina</marca>
+            <description>Reloj de hombre F20560/2 Timeless Chronograph de acero plateado</description>
+            <precio>161,10 €</precio>
+            <categoria>Movimiento</categoria>
+            <collection>SEIKO POWER</collection>
+        </datos>
+    </articolosinfo>
+    <articolosinfo>
+        <datos>
+            <marca>Jaguar</marca>
+            <description>Reloj de hombre J930/1 Connected de acero azul</description>
+            <precio>531 €</precio>
+            <categoria>Tamaño de la caja</categoria>
+        </datos>
+    </articolosinfo>
+    <articolosinfo>
+        <datos>
+            <marca>Viceroy</marca>
+            <description>Reloj de hombre Beat multifunción de acero</description>
+            <precio>97,30 €</precio>
+        </datos>
+    </articolosinfo>
+</articulos>

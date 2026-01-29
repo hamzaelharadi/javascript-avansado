@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- jequery -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>  
+
+<!-- font Awsome  -->
+<link rel="stylesheet" href="/CSS/all.css"/>
+<link rel="stylesheet" href="/CSS/all.min.css"/>
+
+<!-- Normaliz  -->
+<link rel="stylesheet" href="/CSS/normalize.css"/>
+
+
+<!-- API OpenStreetMaps -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+<!-- API Leaflet routing  -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css" />
+     
+<link rel="stylesheet" href="/css/stilos.css">
+<title>Contactos</title>
+</head>
+<body>
+
+   
+
+<!-- INCIO DE HEADER -->
+
+    <header>
+        <div class="header" id="header">
+            <div class="contenidor">
+                <a href="" class="logo">Logo</a>
+           
+                    <ul class="main-nav">
+                         <li><a href="/index.html">Inicio</a></li>
+                        <li><a href="/presupuesto.html">Prespuesto</a></li>
+                        <li><a href="/galeria.html">Galeria</a></li>     
+                        <li><a href="/contactos.html">Contactos</a></li>
+                    </ul>
+            </div>
+        </div>
+    </header>
+<!-- FEN DE HEADER  -->   
+
+
+<!-- INCIO DE SECTION DE CONTACTO  -->
+
+<div class="contenidor">
+    <div class="info">
+        <div class="llamada">
+            <i class="fa-sharp-duotone fa-solid fa-phone"></i>
+             <h3>Llámanos</h3>
+             <p>Cuéntenos sus necesidade</p>
+             <button id="numero">ver Telefono</button>
+             <h3 id="mostrar-numero">+34123456789</h3>
+        </div>
+        <div class="email">
+            <i class="fa-slab fa-regular fa-envelope"></i>
+            <h3>Escríbenos</h3>
+            <p>Para consultas y preguntas</p>
+            <h3>email@ubication.es</h3>
+        </div>   
+        <div class="map">
+            <i class="fa-solid fa-location-dot"></i>
+             <h3>Dónde estamos</h3>
+             <p>Pº Castellanos 65, Madrid, Madrid 28025, ESP</p>
+             <h3> <a href="https://maps.app.goo.gl/ZYY5ig1tvxdTwWj68">Donde estamos</a></h3>
+        </div>
+    </div>
+
+    <!-- INCIO DE SECTION DE MAPA  -->
+
+    <div class="imag-mapa" id="mapa"></div>
+        
+    
+
+   <!-- FEN DE SECTION DE MAPA  -->
+    
+   <!-- INCIO DE SECTION DE CONTACTO  -->
+    <h3>Contáctenos</h3>
+    <form id="formulario" class="form-Contact"  method="post" action="procesar.php">
+        <div class="contactos"> 
+            <div class="contactos-uno">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre">
+            </div>
+        
+            <div class="contactos-dos">  
+                <label for="email">Email*:</label>
+                <input type="text" id="email">
+            </div>
+            <div class="contactos-tres"> 
+                <label for="mobile">Telephone</label>
+                <input type="number" id="mobile">
+            </div>    
+        </div>  
+
+        <div class="message">
+            <label for="message">Mensaje*:</label>
+            <textarea id="message" name="message"></textarea> 
+        </div>   
+        <div class="Proteccion">
+            <label for="prevacidad">
+            <input type="checkbox" id="prevacidad">
+            He leído y acepto la Política de Protección de Datos
+            </label>
+        </div>
+        <div>
+        <input class="btn" type="submit" id="btn" value="enviar message">
+        </div>
+    </form>
+
+
+</div>
+<!-- FEN DE SECTION DE CONTACTO  -->    
+
+
+<!-- INCIO DE FOOTER  -->
+
+
+<footer>
+    <div class="top-footer">
+        <div class="contenidor">
+            <div class="global-footer">
+                <nav class="global-footer-nav">
+                    <ul class="main-list">
+                        <li><a href="">Compañía</a></li>
+                        <li><a href="">Noticias</a></li>
+                        <li><a href="">Para los medios de comunicación</a></li>
+                    </ul>
+                    <ul class="sublist">
+                        <li><a href="">Accesibilidad</a></li>
+                        <li><a href="">Requisito</a></li>
+
+                    </ul>
+                        <ul class="sublist">
+                        <li><a href="">Advertencia de Compra por Internet</a></li>
+                        <li><a href="">Sitemap</a></li>
+
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer-sns">
+                <ul class="social">
+                    <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                    <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+                    <li><a href=""><i class="fab fa-youtube"></i></a></li>
+                </ul>
+
+            </div>
+            <div class="footer-copy">
+                <small class="copy">© 2026 Seiko Watch Corporation</small>
+            </div>
+        </div>
+
+    </div>
+</footer>
+
+<!-- FEN DE FOOTER   -->
+
+
+
+<!-- API OpenStreetMaps -->
+ <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script> <script src="/js/cotactos.js"></script>
+
+ <!-- API Leaflet routing  -->
+ <script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
+<script src="/js/cotactos.js"></script>
+<script src="/js/scripts.js"></script>
+</body>
+</html>
