@@ -70,7 +70,7 @@ function validainput(input,regex){
                 validar[input.name]= false ; 
                 }else if(!regex.test(input.value)){
                    
-                        error(input,'Debes respetar la forma de el campo'+input.name);
+                        error(input,'Debes respetar la forma de el campo '+input.name);
                         validar[input.name]= false ;
                     
                
