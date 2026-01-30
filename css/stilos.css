@@ -1052,6 +1052,7 @@ width: 100%;
 
 /* ------ INCIO STELO  3 PARTIE DE FORMULARIO --------  */
 .prevacidad{
+  padding: 20px;
   display: flex;
   flex-direction: column;
   gap: 30px;
