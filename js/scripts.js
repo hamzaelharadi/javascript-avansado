@@ -35,10 +35,6 @@ function mostrarArticolos(elem){
 
     
     
-    //   //limpiamos 
-    //     document.getElementById('nombre').innerHTML = "";
-    //     document.getElementById('description').innerHTML ="";
-    //     document.getElementById('precio').innerHTML = "";
 
             let nombre = document.getElementById('articolos').querySelectorAll('.nombre');
              let elementParafo = document.getElementById('articolos').querySelectorAll('.description');   
@@ -58,12 +54,6 @@ function mostrarArticolos(elem){
             
 
 
-
-            // document.querySelectorAll('#nombre')[i].innerHTML = marca[i].childNodes[0].nodeValue ;
-            // document.querySelectorAll('#description')[i].innerHTML = description[i].childNodes[0].nodeValue ;
-            // document.querySelectorAll('#precio')[i].innerHTML = precio[i].childNodes[0].nodeValue ;
-            // document.querySelectorAll('#categoria')[i].innerHTML = categoria[i].childNodes[0].nodeValue ;
-            // document.querySelectorAll('#collecion')[i].innerHTML = collection[i].childNodes[0].nodeValue ;
             
        
 
@@ -84,13 +74,7 @@ function loops(elemdiv, tagxml){
      }
 }
 
-// function loopscollection(elemdiv){
-//    for(let i = 0 ; i<elemdiv.length ; i++){
-//            console.log(elemdiv[i].textContent)
-            
 
-//      }
-// }
 
 
 
@@ -104,12 +88,12 @@ $(document).ready(function () {
 
     // Array de imágenes (puedes añadir tantas como quieras)
     const images = [
-        "/images/categoryvisual.png",
-        "/images/categoryvisual.png",
-        "images/collection1.png",
-        "/images/collection2.png",
-        "/images/collection3.png",
-        "/images/collection4.png"
+        "../javascript-avansado/images/categoryvisual.png",
+        "../javascript-avansado/images/categoryvisual.png",
+        "../javascript-avansadoimages/collection1.png",
+        "../javascript-avansado/images/collection2.png",
+        "../javascript-avansado/images/collection3.png",
+        "../javascript-avansado/images/collection4.png"
     ];
 
     // Generar galería dinámicamente
