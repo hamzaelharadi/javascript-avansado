@@ -70,7 +70,7 @@ function validainput(input,regex){
                 validar[input.name]= false ; 
                 }else if(!regex.test(input.value)){
                    
-                        error(input,'Debes respectar la forma de '+input.name);
+                        error(input,'Debes respetar la forma de el campo'+input.name);
                         validar[input.name]= false ;
                     
                
@@ -86,7 +86,7 @@ function validainput(input,regex){
 function validarSelect(){
 
      if(selectProducto.options.selectedIndex == 0){
-        error(selectProducto, ' debes selctionar un producto');
+        error(selectProducto, ' Debes seleccionar un producto');
        validar.selectProducto = false ;
      
     }else{
@@ -108,7 +108,7 @@ function validarPrivacidad() {
    
 
     if (!prevacidad.checked) {
-        error(prevacidad, ' debes markar  Privacidad');
+        error(prevacidad, ' Debes marcar  Privacidad');
        validar.prevacidad= false ;
     } else {
         validar.prevacidad= true ;
