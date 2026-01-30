@@ -90,7 +90,7 @@ $(document).ready(function () {
     const images = [
         "../javascript-avansado/images/categoryvisual.png",
         "../javascript-avansado/images/categoryvisual.png",
-        "../javascript-avansadoimages/collection1.png",
+        "../javascript-avansado/images/collection1.png",
         "../javascript-avansado/images/collection2.png",
         "../javascript-avansado/images/collection3.png",
         "../javascript-avansado/images/collection4.png"
