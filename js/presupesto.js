@@ -179,50 +179,6 @@ bottonReset.addEventListener('click',()=>{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// //************************** VALIDATION de prevacidad *******************************************************
-
-
-// prevacidad.addEventListener(('blur') , ()=>{
-
-//     if(!prevacidad.checked){
-//         error(prevacidad, ' debes aceptar las condiciones de privacidad');
-//         validar.prevacidad = false;
-//     }else{
-//         succes(prevacidad);
-//         validar.prevacidad = true;
-//     }
-// })
-
-
-
-
-
- 
-
-
-
-
-
 function calcularPresupuesto() {
     //selctionamos las option 
  let optionSelectionada = selectProducto.options[selectProducto.selectedIndex];
